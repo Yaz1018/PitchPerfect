@@ -34,18 +34,24 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AS8-lP-6fH">
                                 <rect key="frame" x="248" y="367" width="106" height="30"/>
                                 <state key="normal" title="Stop Recording"/>
+                                <connections>
+                                    <action selector="stopRecording:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GMf-zU-7ru"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="AS8-lP-6fH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="1" id="Ckn-Eu-c7r"/>
-                            <constraint firstItem="Miq-bx-NyQ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="42.5" id="GVV-33-1hi"/>
+                            <constraint firstItem="Miq-bx-NyQ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="42" id="GVV-33-1hi"/>
                             <constraint firstItem="Miq-bx-NyQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="T5X-gU-yRo"/>
                             <constraint firstItem="AS8-lP-6fH" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="82" id="WVG-WL-NE8"/>
                             <constraint firstItem="X1t-Pv-AT4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aiy-bg-2Lh"/>
                             <constraint firstItem="X1t-Pv-AT4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="kYY-6n-foa"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="recordingLabel" destination="Miq-bx-NyQ" id="9C1-Af-IKH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
