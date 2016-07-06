@@ -21,5 +21,8 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func recordAudio(sender: AnyObject) {
+        print("Button was pressed")
+    }
 }
 
